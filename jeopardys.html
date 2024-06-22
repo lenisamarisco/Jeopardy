@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeopardy Game</title>
+    <link rel="stylesheet" href="jeopardys.css">
+</head>
+<body>
+    <h1>Jeopardy Game</h1>
+    <div class="buttons">
+        <button id="start-btn">Start</button>
+        
+    </div>
+    <div class="buttons">
+        <button id="restart-btn" style="display: none;">Restart Game</button>
+    </div>
+</div>
+    <table id="jeopardy-board">
+        <thead>
+            <tr id="categories-row">
+                <th>Category 1</th>
+                <th>Category 2</th>
+                <th>Category 3</th>
+                <th>Category 4</th>
+                <th>Category 5</th>
+                <th>Category 6</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Each row represents a question -->
+            <tr>
+                <td class="question" data-category="1" data-points="100">Question 1 ($100)</td>
+                <td class="question" data-category="2" data-points="100">Question 2 ($100)</td>
+                <td class="question" data-category="3" data-points="100">Question 3 ($100)</td>
+                <td class="question" data-category="4" data-points="100">Question 4 ($100)</td>
+                <td class="question" data-category="5" data-points="100">Question 5 ($100)</td>
+                <td class="question" data-category="6" data-points="100">Question 6 ($100)</td>
+            </tr>
+            <tr>
+                <td class="question" data-category="1" data-points="200">Question 1 ($200)</td>
+                <td class="question" data-category="2" data-points="200">Question 2 ($200)</td>
+                <td class="question" data-category="3" data-points="200">Question 3 ($200)</td>
+                <td class="question" data-category="4" data-points="200">Question 4 ($200)</td>
+                <td class="question" data-category="5" data-points="200">Question 5 ($200)</td>
+                <td class="question" data-category="6" data-points="200">Question 6 ($200)</td>
+            </tr>
+            <tr>
+                <td class="question" data-category="1" data-points="200">Question 1 ($200)</td>
+                <td class="question" data-category="2" data-points="200">Question 2 ($200)</td>
+                <td class="question" data-category="3" data-points="200">Question 3 ($200)</td>
+                <td class="question" data-category="4" data-points="200">Question 4 ($200)</td>
+                <td class="question" data-category="5" data-points="200">Question 5 ($200)</td>
+                <td class="question" data-category="6" data-points="200">Question 6 ($200)</td>
+            </tr>
+            <tr>
+                <td class="question" data-category="1" data-points="200">Question 1 ($200)</td>
+                <td class="question" data-category="2" data-points="200">Question 2 ($200)</td>
+                <td class="question" data-category="3" data-points="200">Question 3 ($200)</td>
+                <td class="question" data-category="4" data-points="200">Question 4 ($200)</td>
+                <td class="question" data-category="5" data-points="200">Question 5 ($200)</td>
+                <td class="question" data-category="6" data-points="200">Question 6 ($200)</td>
+            </tr>
+            <tr>
+                <td class="question" data-category="1" data-points="200">Question 1 ($200)</td>
+                <td class="question" data-category="2" data-points="200">Question 2 ($200)</td>
+                <td class="question" data-category="3" data-points="200">Question 3 ($200)</td>
+                <td class="question" data-category="4" data-points="200">Question 4 ($200)</td>
+                <td class="question" data-category="5" data-points="200">Question 5 ($200)</td>
+                <td class="question" data-category="6" data-points="200">Question 6 ($200)</td>
+            </tr>
+            <!-- Repeat for other point values -->
+        </tbody>
+    </table>
+
+    <div id="question-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="question-text"></p>
+            <input type="text" id="answer-input" placeholder="Your answer...">
+            <button id="submit-answer">Submit Answer</button>
+            <p id="result"></p>
+            
+    </div>
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="https://unpkg.com/lodash"></script>
+    <script src="jeopardys.js"></script>
+</body>
+</html>
