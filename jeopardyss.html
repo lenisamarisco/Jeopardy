@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeopardy Game</title>
+  <link rel="stylesheet" href="jeopardy.css">
+</head>
+<body>
+  <!-- Game board and controls -->
+  <div id="jeopardy-board" class="hidden">
+    <table id="game-table">
+      <!-- Game board dynamically generated -->
+    </table>
+  </div>
+
+  <!-- Start button and spinner -->
+  <button id="start-btn">Start Game</button>
+  <div id="spinner" class="hidden">Loading...</div>
+
+  <!-- Restart button dynamically added -->
+  <!-- Footer with name Lenisa -->
+  <footer>By Lenisa</footer>
+
+  <script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash"></script>
+  <script src="jeopardy.js"></script>
+</body>
+</html>
